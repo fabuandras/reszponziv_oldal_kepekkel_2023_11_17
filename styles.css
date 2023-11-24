@@ -39,12 +39,13 @@
     margin-top: 2px;
 }
 
-#main {
+#mainbgcolor {
     background-color: rgb(248, 244, 221)
 }
 
 main {
     width: 70%;
+	margin: auto;
 }
 
 #indexkep {
@@ -73,9 +74,12 @@ main {
 
 /* menü kialakítása */
 
-#active {
+#activeli {
+    background-color: red;
+}
+
+#activea {
     color: white;
-    background: red;
 }
 
 nav ul {
@@ -85,7 +89,7 @@ nav ul {
     list-style-type: none;
     margin-top: 0px;
     height: 30px;
-    width: 80%;
+    width: 100%;
 }
 
 nav li {
@@ -101,16 +105,44 @@ nav li a {
     color:red;
 }
 
-nav li:hover {
-    background-color:brown;
-}
+/*nav li:hover {
+    background-color: red;
+}*/
 
 /* tablet nézet */
 @media screen and (max-width: 800px) {
-    /*...*/
+    nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0px;
+		list-style-type: none;
+		margin-top: 0px;
+		height: 30px;
+		width: 60%;
+	}
+	
+	#kepek {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 /* mobil nézet */
 @media screen and (max-width: 450px) {
-    /*...*/
+    nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0px;
+		list-style-type: none;
+		margin-top: 0px;
+		height: 30px;
+		width: 100%;
+	}
+	
+	#kepek {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+	}
 }
